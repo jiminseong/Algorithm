@@ -14,3 +14,21 @@
 // 제한사항
 // 1 ≤ s의 길이 ≤ 10,000
 // s은 영어 소문자로만 이루어져 있습니다.
+
+//pseudo code
+
+// function solution(s) {
+//   const strArray = s.split("");
+//   const result = new Array(s.length).fill(-1)
+//   for(strArray를 다돌면서 제일 마지막 요소부터 i 진행)
+//       for(i보다 앞에있는 것에 한해서 진행)
+//           i-1, i-2, i-3 이런식으로 0이 될때까지 진행;
+//           strArray[i-n] === strArray[i]가 될때
+//           n은 길이를 나타내고 result[i]의 값이됨
+//       그리고 다음 i로 넘어감
+//       i가 0이 될때까지 반복
+
+//   return result;
+// }
+
+//lastIndexOf 이용하기!
