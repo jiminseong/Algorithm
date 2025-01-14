@@ -261,5 +261,6 @@ var isPalindrome = function (s) {
       return false;
     }
   }
+
   return true;
 };
