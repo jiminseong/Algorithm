@@ -17,8 +17,5 @@
       process.exit();
     });
 
-  const solution = (n) => {
-    const array = new Array(n);
-    for (let i = 0; i <= n; i++) {}
-  };
+  const solution = (n) => {};
 }
