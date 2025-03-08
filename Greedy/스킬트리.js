@@ -3,7 +3,8 @@
 // 3. 각 skill_tree를 tree로 forEach ,tree의 요소는 s
 // 4. 내부 for 문으로 array.indclude(s)을 이용해서 판단
 // 5. s !== array.shift();
-// 	 'C' === 'C','B','D' -> 여기서 'C'  -> 이게 다르면 isValid false;
+// 	 'C' === 'C','B','D'
+//   'D' !== 'B','D' -> 여기서 'B'  -> 이게 다르면 isValid false;
 
 function solution(skill, skill_trees) {
   let count = 0;

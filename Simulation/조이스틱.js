@@ -43,31 +43,3 @@ function solution(name) {
 
   return answer + move;
 }
-
-function solution(name) {
-  let move = name.length - 1;
-  let answer = 0;
-
-  [...name].forEach((char, index) => {
-    // 문자 변경 최소 횟수 계산
-    answer += Math.min(
-      char.charCodeAt() - "A".charCodeAt(),
-      "Z".charCodeAt() - char.charCodeAt() + 1
-    );
-
-    // 연속된 'A' 찾기
-    let nextIndex = index + 1;
-    while (nextIndex < name.length && name[nextIndex] === "A") {
-      nextIndex++;
-    }
-
-    // 최소 커서 이동 거리 업데이트
-    move = Math.min(
-      move,
-      index * 2 + (name.length - nextIndex), // 우-좌-우 방식
-      (name.length - nextIndex) * 2 + index // 좌-우-좌 방식
-    );
-  });
-
-  return answer + move;
-}
